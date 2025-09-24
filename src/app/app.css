@@ -120,10 +120,19 @@ body {
 .header-background {
   background-image: linear-gradient(to left, rgb(165, 222, 244), rgb(216, 237, 245));
 }
-.main-headings{
-    font-family: 'ArchivoBlack', sans-serif;
+.main-headings {
+  font-family: 'ArchivoBlack', sans-serif;
 }
-.name-heading{
-    font-family: 'StyleScript', sans-serif;
-    font-size: 30px;
+.name-heading {
+  font-family: 'StyleScript', sans-serif;
+  font-size: 30px;
+}
+.education-section {
+  background-image: conic-gradient(from 180deg, rgb(215, 241, 251), white);
+}
+.exprience-section {
+  background-image: conic-gradient(from 180deg, white, rgb(215, 241, 251));
+}
+.skills-section{
+  background-image: linear-gradient(to top, rgb(165, 222, 244), white);;
 }
