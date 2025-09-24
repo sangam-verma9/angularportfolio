@@ -36,8 +36,9 @@ export class App {
     this.closeMobileMenu();
   }
 
-  onSubmit() {
-    if (!this.formData.name || !this.formData.email || !this.formData.message) {
+  onSubmit(contactForm: any) {
+    console.log(contactForm.value);
+    if (!contactForm.value.name || !contactForm.value.email || !contactForm.value.message) {
       alert('Please fill all fields');
       return;
     }
@@ -46,7 +47,7 @@ export class App {
 
     setTimeout(() => {
       alert('Message sent successfully!');
-      this.formData = { name: '', email: '', message: '' };
+      contactForm.value = { name: '', email: '', message: '' };
       this.isSubmitting = false;
     }, 2000);
   }

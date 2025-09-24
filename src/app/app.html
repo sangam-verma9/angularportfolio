@@ -1,676 +1,796 @@
-<body class="antialiased">
-  <!-- Navigation -->
-  <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 shadow-sm">
-    <div class="max-w-6xl mx-auto px-6 py-4">
-      <div class="flex justify-between items-center">
-        <div class="text-2xl font-bold text-gray-800">Sangam Verma</div>
-        <div class="hidden md:flex space-x-8">
-          <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">About</a>
-          <a href="#skills" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Skills</a>
-          <a href="#projects" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Projects</a>
-          <a href="#experience" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Experience</a>
-          <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Contact</a>
-        </div>
-        <button id="mobile-menu-toggle" class="md:hidden text-gray-700">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
+<nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 shadow-sm header-background">
+  <div class="max-w-6xl mx-auto px-6 py-4">
+    <div class="flex justify-between items-center">
+      <div class="text-2xl font-bold text-gray-800">
+        <span class="name-heading">Sangam Verma</span>
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors duration-300"
+          >About</a
+        >
+        <a href="#skills" class="text-gray-700 hover:text-blue-600 transition-colors duration-300"
+          >Skills</a
+        >
+        <a href="#projects" class="text-gray-700 hover:text-blue-600 transition-colors duration-300"
+          >Projects</a
+        >
+        <a
+          href="#experience"
+          class="text-gray-700 hover:text-blue-600 transition-colors duration-300"
+          >Experience</a
+        >
+        <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors duration-300"
+          >Contact</a
+        >
+      </div>
+      <button id="mobile-menu-toggle" class="md:hidden text-gray-700">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div
+    id="mobile-menu"
+    class="mobile-menu fixed top-0 left-0 w-full h-screen bg-white z-40 md:hidden"
+  >
+    <div class="flex justify-between items-center px-6 py-4 border-b">
+      <div class="text-xl font-bold text-gray-800">Menu</div>
+      <button id="mobile-menu-close" class="text-gray-700">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    <div class="flex flex-col space-y-6 px-6 py-8">
+      <a href="#about" class="text-xl text-gray-700 hover:text-blue-600">About</a>
+      <a href="#skills" class="text-xl text-gray-700 hover:text-blue-600">Skills</a>
+      <a href="#projects" class="text-xl text-gray-700 hover:text-blue-600">Projects</a>
+      <a href="#experience" class="text-xl text-gray-700 hover:text-blue-600">Experience</a>
+      <a href="#contact" class="text-xl text-gray-700 hover:text-blue-600">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<section
+  class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 pt-20 hero-background"
+>
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <div class="animate-fade-in-up">
+      <h1 class="text-5xl md:text-7xl font-bold text-gray-800 mb-6 leading-tight">
+        Hi, I'm <span class="gradient-text">Sangam</span>
+      </h1>
+      <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+        MERN Stack Developer & Problem Solver
+      </p>
+      <p class="text-lg text-gray-500 mb-10 max-w-2xl mx-auto">
+        I specialize in building full-stack web applications using the MERN stack, ensuring seamless
+        user experiences with a focus on responsiveness, scalability, and performance.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="#projects"
+          class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full hover:shadow-xl hover-lift-small transition-all duration-300 font-semibold"
+        >
+          View My Work
+        </a>
+        <a
+          href="#contact"
+          class="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-full hover:bg-blue-600 hover:text-white transition-all duration-300 font-semibold"
+        >
+          Get In Touch
+        </a>
       </div>
     </div>
+  </div>
+</section>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 w-full h-screen bg-white z-40 md:hidden">
-      <div class="flex justify-between items-center px-6 py-4 border-b">
-        <div class="text-xl font-bold text-gray-800">Menu</div>
-        <button id="mobile-menu-close" class="text-gray-700">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-        </button>
-      </div>
-      <div class="flex flex-col space-y-6 px-6 py-8">
-        <a href="#about" class="text-xl text-gray-700 hover:text-blue-600">About</a>
-        <a href="#skills" class="text-xl text-gray-700 hover:text-blue-600">Skills</a>
-        <a href="#projects" class="text-xl text-gray-700 hover:text-blue-600">Projects</a>
-        <a href="#experience" class="text-xl text-gray-700 hover:text-blue-600">Experience</a>
-        <a href="#contact" class="text-xl text-gray-700 hover:text-blue-600">Contact</a>
-      </div>
+<section id="about" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">
+        <span class="main-headings">About Me</span>
+      </h2>
+      <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto"></div>
     </div>
-  </nav>
 
-  <!-- Hero Section -->
-  <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 pt-20">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <div class="animate-fade-in-up">
-        <h1 class="text-5xl md:text-7xl font-bold text-gray-800 mb-6 leading-tight">
-          Hi, I'm <span class="gradient-text">Sangam</span>
-        </h1>
-        <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-          MERN Stack Developer & Problem Solver
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="space-y-6">
+        <h3 class="text-2xl font-semibold text-gray-800">Full-Stack Developer</h3>
+        <p class="text-gray-600 text-lg leading-relaxed">
+          I am a MERN Stack Developer who enjoys solving real-world problems by creating full-stack
+          web applications. I am continuously exploring advanced web technologies, open source
+          contributions, and constantly pushing myself to enhance my development skills and
+          problem-solving abilities.
         </p>
-        <p class="text-lg text-gray-500 mb-10 max-w-2xl mx-auto">
-          I specialize in building full-stack web applications using the MERN stack, ensuring seamless user experiences
-          with a focus on responsiveness, scalability, and performance.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="#projects"
-            class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full hover:shadow-xl hover-lift-small transition-all duration-300 font-semibold">
-            View My Work
-          </a>
-          <a href="#contact"
-            class="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-full hover:bg-blue-600 hover:text-white transition-all duration-300 font-semibold">
-            Get In Touch
-          </a>
+        <div class="flex flex-wrap gap-3">
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium"
+            >Web Development</span
+          >
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium"
+            >Problem Solving</span
+          >
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium"
+            >Open Source</span
+          >
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium"
+            >Full Stack</span
+          >
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium"
+            >MERN Stack</span
+          >
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium"
+            >UI/UX</span
+          >
+        </div>
+      </div>
+      <div class="image-background">
+        <img src="/image-photo.png" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="py-20 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4 main-headings">Skills & Technologies</h2>
+      <div class="w-60 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto mb-6"></div>
+      <p class="text-gray-600 text-lg">Technologies I work with</p>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-8">
+      <div class="bg-white rounded-xl p-6 shadow-lg card-hover hover-lift">
+        <div class="text-center mb-6">
+          <div
+            class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center pulse-slow"
+          >
+            <span class="text-white text-2xl">🎨</span>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800">Frontend</h3>
+        </div>
+        <div class="gap-5 flex flex-wrap justify-center">
+          <div class="flex items-center justify-between">
+            <img src="/react.png" alt="react" class="w-12 h-12" />
+          </div>
+          <div class="flex items-center justify-between">
+            <img src="/typescript.png" alt="typescript" class="w-12 h-12" />
+          </div>
+          <div class="flex items-center justify-between">
+            <img src="/html.png" alt="htmml" class="w-12 h-12" />
+          </div>
+          <div class="flex items-center justify-between">
+            <img src="/css.png" alt="css" class="w-12 h-12" />
+          </div>
+          <div class="flex items-center justify-between">
+            <img src="/tailwind.png" alt="tailwind" class="w-12 h-12" />
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl p-6 shadow-lg card-hover hover-lift">
+        <div class="text-center mb-6">
+          <div
+            class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center pulse-slow"
+          >
+            <span class="text-white text-2xl">⚙️</span>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800">Backend</h3>
+        </div>
+        <div class="flex flex-wrap gap-5 justify-center">
+          <div class="flex items-center justify-between">
+            <img src="/node.png" alt="node" class="w-12 h-12" />
+          </div>
+          <div class="flex items-center justify-between">
+            <img src="/express.png" alt="express" class="w-18 h-12" />
+          </div>
+          <div class="flex items-center justify-between">
+            <img src="/mongodb.png" alt="mongodb" class="w-12 h-12" />
+          </div>
+          <div class="flex items-center justify-between">
+            <img src="/api.png" alt="api" class="w-12 h-12" />
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 shadow-lg card-hover hover-lift">
+        <div class="text-center mb-6">
+          <div
+            class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center pulse-slow"
+          >
+            <span class="text-white text-2xl">🛠️</span>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800">Tools</h3>
+        </div>
+        <div class="flex flex-wrap justify-center gap-5">
+          <div class="flex items-center justify-between">
+            <img src="/github.png" alt="github" class="w-16 h-16" />
+          </div>
+          <div class="flex items-center justify-between">
+            <img src="/vscode.png" alt="vscode" class="w-12 h-12" />
+          </div>
+          <div class="flex items-center justify-between">
+            <img src="/postman.png" alt="postman" class="w-12 h-12" />
+          </div>
+          <div class="flex items-center justify-between">
+            <img src="/npm.png" alt="npm" class="w-12 h-12" />
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 shadow-lg card-hover hover-lift">
+        <div class="text-center mb-6">
+          <div
+            class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center pulse-slow"
+          >
+            <span class="text-white text-2xl">📚</span>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800">Libraries</h3>
+        </div>
+        <div class="flex flex-wrap justify-center gap-5">
+          <div class="flex items-center justify-between">
+            <img src="/redux.png" alt="redux" class="w-12 h-12" />
+          </div>
+          <div class="flex items-center justify-between">
+            <img src="/materialui.png" alt="materialui" class="w-12 h-12" />
+          </div>
+          <div class="flex items-center justify-between">
+            <img src="/bootstrap.png" alt="bootstrap" class="w-16 h-12" />
+          </div>
+          <div class="flex items-center justify-between">
+            <img src="/nextjs.png" alt="nextjs" class="w-16 h-12" />
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- About Section -->
-  <section id="about" class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-gray-800 mb-4">About Me</h2>
-        <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto"></div>
-      </div>
+<section id="projects" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4 main-headings">Featured Projects</h2>
+      <div class="w-60 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto mb-6"></div>
+      <p class="text-gray-600 text-lg">Some of my recent work</p>
+    </div>
 
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="space-y-6">
-          <h3 class="text-2xl font-semibold text-gray-800">Full-Stack Developer</h3>
-          <p class="text-gray-600 text-lg leading-relaxed">
-            I am a MERN Stack Developer who enjoys solving real-world problems by creating full-stack web applications.
-            I am continuously exploring advanced web technologies, open source contributions, and constantly pushing
-            myself to enhance my development skills and problem-solving abilities.
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Project 1: E-Commerce Platform -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover hover-lift">
+        <div
+          class="h-42 bg-gradient-to-br from-cyan-100 to-blue-200 flex items-center justify-center"
+        >
+          <img
+            src="https://res.cloudinary.com/dirhwaotp/image/upload/v1729773901/portfolio/projects/uraoah1sek1waowgrghl.png"
+            alt="weather-app"
+            class="w-full"
+          />
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">E-Commerce Platform</h3>
+          <p class="text-gray-600 mb-4 text-sm">
+            A full-stack e-commerce application built with MERN stack featuring user authentication,
+            product management, and payment integration.
           </p>
-          <div class="flex flex-wrap gap-3">
-            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Web Development</span>
-            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Problem Solving</span>
-            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Open Source</span>
-            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Full Stack</span>
-            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">MERN Stack</span>
-            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">UI/UX</span>
+
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >React</span
+            >
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >Node.js</span
+            >
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >MongoDB</span
+            >
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >Express</span
+            >
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >Redux</span
+            >
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >Stripe</span
+            >
+          </div>
+
+          <div class="flex space-x-3">
+            <a
+              href="https://kitkart.netlify.app/"
+              class="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center py-2 rounded-lg hover:shadow-lg transition-all duration-300 text-sm font-medium"
+            >
+              Live Demo
+            </a>
+            <a
+              href="https://github.com/sangam-verma9/kitkart"
+              class="flex-1 border border-gray-300 text-gray-700 text-center py-2 rounded-lg hover:bg-gray-50 transition-all duration-300 text-sm font-medium"
+            >
+              GitHub
+            </a>
           </div>
         </div>
-        <div class="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8 shadow-lg">
-          <div class="space-y-4">
-            <div class="flex justify-between items-center">
-              <span class="font-semibold text-gray-800">Problem Solving</span>
-              <span class="text-blue-600 font-bold">95%</span>
-            </div>
-            <div class="w-full bg-gray-200 rounded-full h-3">
-              <div class="progress-bar h-3 rounded-full" style="width: 95%"></div>
-            </div>
+      </div>
 
-            <div class="flex justify-between items-center">
-              <span class="font-semibold text-gray-800">Full-Stack Development</span>
-              <span class="text-blue-600 font-bold">90%</span>
-            </div>
-            <div class="w-full bg-gray-200 rounded-full h-3">
-              <div class="progress-bar h-3 rounded-full" style="width: 90%"></div>
-            </div>
+      <!-- Project 2: Task Management App -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover hover-lift">
+        <div
+          class="h-42 bg-gradient-to-br from-cyan-100 to-blue-200 flex items-center justify-center"
+        >
+          <img
+            src="https://res.cloudinary.com/dirhwaotp/image/upload/v1729773900/portfolio/projects/ng9wqk4jb9u8njfcodks.png"
+            alt="weather-app"
+            class="w-full"
+          />
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Task Management App</h3>
+          <p class="text-gray-600 mb-4 text-sm">
+            A collaborative task management application with real-time updates, user roles, and
+            project tracking capabilities.
+          </p>
 
-            <div class="flex justify-between items-center">
-              <span class="font-semibold text-gray-800">UI/UX Implementation</span>
-              <span class="text-blue-600 font-bold">88%</span>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >React</span
+            >
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >TypeScript</span
+            >
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >Node.js</span
+            >
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >MongoDB</span
+            >
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >Socket.io</span
+            >
+          </div>
+
+          <div class="flex space-x-3">
+            <a
+              href="https://notecenter.netlify.app/"
+              class="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center py-2 rounded-lg hover:shadow-lg transition-all duration-300 text-sm font-medium"
+            >
+              Live Demo
+            </a>
+            <a
+              href="https://github.com/sangam-verma9/notecenterbacckend"
+              class="flex-1 border border-gray-300 text-gray-700 text-center py-2 rounded-lg hover:bg-gray-50 transition-all duration-300 text-sm font-medium"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Portfolio Website -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover hover-lift">
+        <div
+          class="h-42 bg-gradient-to-br from-cyan-100 to-blue-200 flex items-center justify-center"
+        >
+          <img
+            src="https://res.cloudinary.com/dirhwaotp/image/upload/v1758689922/portfolio/projects/Screenshot_1_nnu1lh.png"
+            alt="weather-app"
+            class="w-full h-52"
+          />
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Portfolio Website</h3>
+          <p class="text-gray-600 mb-4 text-sm">
+            A responsive portfolio website showcasing projects and skills with modern design and
+            smooth animations.
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >React</span
+            >
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >Tailwind CSS</span
+            >
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >Framer Motion</span
+            >
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >Vercel</span
+            >
+          </div>
+
+          <div class="flex space-x-3">
+            <a
+              href="https://sangamverma.vercel.app/"
+              target="_blank"
+              class="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center py-2 rounded-lg hover:shadow-lg transition-all duration-300 text-sm font-medium"
+            >
+              Live Demo
+            </a>
+            <a
+              href="https://github.com/sangam-verma9/sangam-next-portfolio"
+              class="flex-1 border border-gray-300 text-gray-700 text-center py-2 rounded-lg hover:bg-gray-50 transition-all duration-300 text-sm font-medium"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4: Blog Platform -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover hover-lift">
+        <div
+          class="h-42 bg-gradient-to-br from-cyan-100 to-blue-200 flex items-center justify-center"
+        >
+          <img
+            src="https://res.cloudinary.com/dirhwaotp/image/upload/v1729773900/portfolio/projects/ypymbzar1kyclefm3qnr.png"
+            alt="weather-app"
+            class="w-full"
+          />
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Blog Platform</h3>
+          <p class="text-gray-600 mb-4 text-sm">
+            A full-featured blogging platform with user authentication, rich text editor, and
+            comment system.
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >Next.js</span
+            >
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >MongoDB</span
+            >
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >NextAuth</span
+            >
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >TailwindCSS</span
+            >
+          </div>
+
+          <div class="flex space-x-3">
+            <a
+              href="https://sangam-verma9.github.io/advertismentapp/"
+              class="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center py-2 rounded-lg hover:shadow-lg transition-all duration-300 text-sm font-medium"
+            >
+              Live Demo
+            </a>
+            <a
+              href="https://github.com/sangam-verma9/advertismentapp"
+              class="flex-1 border border-gray-300 text-gray-700 text-center py-2 rounded-lg hover:bg-gray-50 transition-all duration-300 text-sm font-medium"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5: Weather Dashboard -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover hover-lift">
+        <div
+          class="h-42 bg-gradient-to-br from-cyan-100 to-blue-200 flex items-center justify-center"
+        >
+          <img
+            src="https://res.cloudinary.com/dirhwaotp/image/upload/v1729773900/portfolio/projects/ukuq1ul8pz0bl3th28ys.png"
+            alt="weather-app"
+            class="w-full"
+          />
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Weather Dashboard</h3>
+          <p class="text-gray-600 mb-4 text-sm">
+            A weather dashboard application displaying current weather and forecasts with
+            location-based services.
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >React</span
+            >
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >JavaScript</span
+            >
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >Weather API</span
+            >
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >CSS3</span
+            >
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >Template Engine</span
+            >
+          </div>
+
+          <div class="flex space-x-3">
+            <a
+              href="https://weather-app-2zgm.onrender.com/"
+              class="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center py-2 rounded-lg hover:shadow-lg transition-all duration-300 text-sm font-medium"
+            >
+              Live Demo
+            </a>
+            <a
+              href="https://github.com/sangam-verma9/weather-app/"
+              class="flex-1 border border-gray-300 text-gray-700 text-center py-2 rounded-lg hover:bg-gray-50 transition-all duration-300 text-sm font-medium"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6: Social Media App -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover hover-lift">
+        <div
+          class="h-42 bg-gradient-to-br from-cyan-100 to-blue-200 flex items-center justify-center"
+        >
+          <img
+            src="https://res.cloudinary.com/dirhwaotp/image/upload/v1729773900/portfolio/projects/s1usdfeztzfq2pqqa3hl.png"
+            alt="weather-app"
+            class="w-full"
+          />
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Social Media App</h3>
+          <p class="text-gray-600 mb-4 text-sm">
+            A social media application with user profiles, posts, likes, comments, and real-time
+            notifications.
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >React</span
+            >
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >Node.js</span
+            >
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >MongoDB</span
+            >
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >Socket.io</span
+            >
+            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+              >Cloudinary</span
+            >
+          </div>
+
+          <div class="flex space-x-3">
+            <a
+              href="https://instagram-lake-xi.vercel.app/"
+              class="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center py-2 rounded-lg hover:shadow-lg transition-all duration-300 text-sm font-medium"
+            >
+              Live Demo
+            </a>
+            <a
+              href="https://github.com/sangam-verma9/instagram"
+              class="flex-1 border border-gray-300 text-gray-700 text-center py-2 rounded-lg hover:bg-gray-50 transition-all duration-300 text-sm font-medium"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="py-20 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4 main-headings">Experience</h2>
+      <div class="w-40 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto"></div>
+    </div>
+
+    <div class="max-w-3xl mx-auto">
+      <div class="relative">
+        <div
+          class="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-600 to-indigo-600"
+        ></div>
+
+        <div class="relative pl-20 pb-12">
+          <div
+            class="absolute left-6 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg pulse-slow"
+          ></div>
+          <div class="bg-white rounded-xl p-6 shadow-lg card-hover">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
+              <h3 class="text-xl font-semibold text-gray-800">Web Developer Intern @ CodeClause</h3>
+              <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium"
+                >Sep 2024 - Oct 2024</span
+              >
             </div>
-            <div class="w-full bg-gray-200 rounded-full h-3">
-              <div class="progress-bar h-3 rounded-full" style="width: 88%"></div>
+            <p class="text-gray-600 mb-3">
+              Worked on full-stack web development projects using React.js, JavaScript, Bootstrap,
+              HTML, CSS, and React-icons. Focused on UI implementation and GitHub collaboration.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">React.js</span>
+              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">JavaScript</span>
+              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Bootstrap</span>
+              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs"
+                >UI Implementation</span
+              >
+              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">GitHub</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+    <div class="max-w-3xl mx-auto">
+      <div class="relative">
+        <div
+          class="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-600 to-indigo-600"
+        ></div>
 
-  <!-- Skills Section -->
-  <section id="skills" class="py-20 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-gray-800 mb-4">Skills & Technologies</h2>
-        <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto mb-6"></div>
-        <p class="text-gray-600 text-lg">Technologies I work with</p>
+        <div class="relative pl-20 pb-12">
+          <div
+            class="absolute left-6 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg pulse-slow"
+          ></div>
+          <div class="bg-white rounded-xl p-6 shadow-lg card-hover">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
+              <h3 class="text-xl font-semibold text-gray-800">Frontend Developer @ AppVersal</h3>
+              <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium"
+                >Feb 2025 - Aug 2025</span
+              >
+            </div>
+            <p class="text-gray-600 mb-3">
+              Developed and maintained web application dashboard with foucs on responsive UI and
+              performance optimization using React.js, Redux, Tailwind CSS, HTML, CSS,and
+              React-icons. Collaborated on GitHub for version control and team workflows.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">React.js</span>
+              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Redux.js</span>
+              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">JavaScript</span>
+              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Tailwind CSS</span>
+              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs"
+                >UI Implementation</span
+              >
+              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">GitHub</span>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
+</section>
 
-      <div class="grid md:grid-cols-4 gap-8">
-        <!-- Frontend Skills -->
-        <div class="bg-white rounded-xl p-6 shadow-lg card-hover hover-lift">
-          <div class="text-center mb-6">
+<section id="contact" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4 main-headings">Let's Work Together</h2>
+      <div class="w-60 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto mb-6"></div>
+      <p class="text-gray-600 text-lg">
+        My inbox is always open. Whether you have a question or just want to say hello!
+      </p>
+    </div>
+
+    <div class="max-w-4xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-12">
+        <div class="space-y-8">
+          <div class="flex items-start space-x-4">
             <div
-              class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center pulse-slow">
-              <span class="text-white text-2xl">🎨</span>
+              class="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center"
+            >
+              <span class="text-white text-xl">📧</span>
             </div>
-            <h3 class="text-xl font-semibold text-gray-800">Frontend</h3>
-          </div>
-          <div class="space-y-3">
-            <div class="flex items-center justify-between">
-              <span class="text-gray-600 font-medium">React</span>
-              <div class="flex space-x-1">
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-              </div>
-            </div>
-            <div class="flex items-center justify-between">
-              <span class="text-gray-600 font-medium">TypeScript</span>
-              <div class="flex space-x-1">
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gray-300"></div>
-              </div>
-            </div>
-            <div class="flex items-center justify-between">
-              <span class="text-gray-600 font-medium">HTML/CSS</span>
-              <div class="flex space-x-1">
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-              </div>
-            </div>
-            <div class="flex items-center justify-between">
-              <span class="text-gray-600 font-medium">Tailwind CSS</span>
-              <div class="flex space-x-1">
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gray-300"></div>
-              </div>
+            <div>
+              <h3 class="font-semibold text-gray-800 mb-2">Email</h3>
+              <p class="text-gray-600">sangamverma955911@gmail.com</p>
             </div>
           </div>
-        </div>
 
-        <!-- Backend Skills -->
-        <div class="bg-white rounded-xl p-6 shadow-lg card-hover hover-lift">
-          <div class="text-center mb-6">
+          <div class="flex items-start space-x-4">
             <div
-              class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center pulse-slow">
-              <span class="text-white text-2xl">⚙️</span>
+              class="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center"
+            >
+              <span class="text-white text-xl">💼</span>
             </div>
-            <h3 class="text-xl font-semibold text-gray-800">Backend</h3>
-          </div>
-          <div class="space-y-3">
-            <div class="flex items-center justify-between">
-              <span class="text-gray-600 font-medium">Node.js</span>
-              <div class="flex space-x-1">
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gray-300"></div>
-              </div>
-            </div>
-            <div class="flex items-center justify-between">
-              <span class="text-gray-600 font-medium">Express</span>
-              <div class="flex space-x-1">
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gray-300"></div>
-              </div>
-            </div>
-            <div class="flex items-center justify-between">
-              <span class="text-gray-600 font-medium">MongoDB</span>
-              <div class="flex space-x-1">
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gray-300"></div>
-              </div>
-            </div>
-            <div class="flex items-center justify-between">
-              <span class="text-gray-600 font-medium">REST APIs</span>
-              <div class="flex space-x-1">
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-              </div>
+            <div>
+              <h3 class="font-semibold text-gray-800 mb-2">LinkedIn</h3>
+              <p class="text-gray-600">linkedin.com/in/sangamverma</p>
             </div>
           </div>
-        </div>
 
-        <!-- Tools Skills -->
-        <div class="bg-white rounded-xl p-6 shadow-lg card-hover hover-lift">
-          <div class="text-center mb-6">
+          <div class="flex items-start space-x-4">
             <div
-              class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center pulse-slow">
-              <span class="text-white text-2xl">🛠️</span>
+              class="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center"
+            >
+              <span class="text-white text-xl">💻</span>
             </div>
-            <h3 class="text-xl font-semibold text-gray-800">Tools</h3>
-          </div>
-          <div class="space-y-3">
-            <div class="flex items-center justify-between">
-              <span class="text-gray-600 font-medium">Git/GitHub</span>
-              <div class="flex space-x-1">
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-              </div>
-            </div>
-            <div class="flex items-center justify-between">
-              <span class="text-gray-600 font-medium">VS Code</span>
-              <div class="flex space-x-1">
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-              </div>
-            </div>
-            <div class="flex items-center justify-between">
-              <span class="text-gray-600 font-medium">Postman</span>
-              <div class="flex space-x-1">
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gray-300"></div>
-              </div>
-            </div>
-            <div class="flex items-center justify-between">
-              <span class="text-gray-600 font-medium">npm/yarn</span>
-              <div class="flex space-x-1">
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gray-300"></div>
-              </div>
+            <div>
+              <h3 class="font-semibold text-gray-800 mb-2">GitHub</h3>
+              <p class="text-gray-600">github.com/sangam-verma9</p>
             </div>
           </div>
         </div>
 
-        <!-- Libraries Skills -->
-        <div class="bg-white rounded-xl p-6 shadow-lg card-hover hover-lift">
-          <div class="text-center mb-6">
-            <div
-              class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center pulse-slow">
-              <span class="text-white text-2xl">📚</span>
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8">
+          <form
+            class="space-y-6"
+            id="contact-form"
+            #contactForm="ngForm"
+            (ngSubmit)="onSubmit(contactForm)"
+          >
+            <div>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+                ngModel
+                class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all"
+              />
             </div>
-            <h3 class="text-xl font-semibold text-gray-800">Libraries</h3>
-          </div>
-          <div class="space-y-3">
-            <div class="flex items-center justify-between">
-              <span class="text-gray-600 font-medium">Redux</span>
-              <div class="flex space-x-1">
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gray-300"></div>
-              </div>
+            <div>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+                ngModel
+                class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all"
+              />
             </div>
-            <div class="flex items-center justify-between">
-              <span class="text-gray-600 font-medium">Material UI</span>
-              <div class="flex space-x-1">
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gray-300"></div>
-              </div>
+            <div>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                rows="4"
+                required
+                ngModel
+                class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all resize-none"
+              ></textarea>
             </div>
-            <div class="flex items-center justify-between">
-              <span class="text-gray-600 font-medium">Bootstrap</span>
-              <div class="flex space-x-1">
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-              </div>
-            </div>
-            <div class="flex items-center justify-between">
-              <span class="text-gray-600 font-medium">Next.js</span>
-              <div class="flex space-x-1">
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                <div class="w-3 h-3 rounded-full bg-gray-300"></div>
-                <div class="w-3 h-3 rounded-full bg-gray-300"></div>
-              </div>
-            </div>
-          </div>
+            <button
+              type="submit"
+              id="submit-btn"
+              class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-3 rounded-lg hover:shadow-lg transition-all duration-300 font-semibold"
+            >
+              Send Message
+            </button>
+          </form>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-gray-800 mb-4">Featured Projects</h2>
-        <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto mb-6"></div>
-        <p class="text-gray-600 text-lg">Some of my recent work</p>
-      </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Project 1: E-Commerce Platform -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover hover-lift">
-          <div class="h-48 bg-gradient-to-br from-blue-100 to-indigo-200 flex items-center justify-center">
-            <span class="text-6xl">🛒</span>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">E-Commerce Platform</h3>
-            <p class="text-gray-600 mb-4 text-sm">A full-stack e-commerce application built with MERN stack featuring
-              user authentication, product management, and payment integration.</p>
-
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">React</span>
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">Node.js</span>
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">MongoDB</span>
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">Express</span>
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">Redux</span>
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">Stripe</span>
-            </div>
-
-            <div class="flex space-x-3">
-              <a href="https://kitkart.netlify.app/"
-                class="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center py-2 rounded-lg hover:shadow-lg transition-all duration-300 text-sm font-medium">
-                Live Demo
-              </a>
-              <a href="https://github.com/sangam-verma9/kitkart"
-                class="flex-1 border border-gray-300 text-gray-700 text-center py-2 rounded-lg hover:bg-gray-50 transition-all duration-300 text-sm font-medium">
-                GitHub
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2: Task Management App -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover hover-lift">
-          <div class="h-48 bg-gradient-to-br from-green-100 to-emerald-200 flex items-center justify-center">
-            <span class="text-6xl">📋</span>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Task Management App</h3>
-            <p class="text-gray-600 mb-4 text-sm">A collaborative task management application with real-time updates,
-              user roles, and project tracking capabilities.</p>
-
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">React</span>
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">TypeScript</span>
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">Node.js</span>
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">MongoDB</span>
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">Socket.io</span>
-            </div>
-
-            <div class="flex space-x-3">
-              <a href="https://notecenter.netlify.app/"
-                class="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center py-2 rounded-lg hover:shadow-lg transition-all duration-300 text-sm font-medium">
-                Live Demo
-              </a>
-              <a href="https://github.com/sangam-verma9/notecenterbacckend"
-                class="flex-1 border border-gray-300 text-gray-700 text-center py-2 rounded-lg hover:bg-gray-50 transition-all duration-300 text-sm font-medium">
-                GitHub
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3: Portfolio Website -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover hover-lift">
-          <div class="h-48 bg-gradient-to-br from-purple-100 to-indigo-200 flex items-center justify-center">
-            <span class="text-6xl">🚀</span>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Portfolio Website</h3>
-            <p class="text-gray-600 mb-4 text-sm">A responsive portfolio website showcasing projects and skills with
-              modern design and smooth animations.</p>
-
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">React</span>
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">Tailwind CSS</span>
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">Framer Motion</span>
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">Vercel</span>
-            </div>
-
-            <div class="flex space-x-3">
-              <a href="https://sangamverma.vercel.app/" target="_blank"
-                class="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center py-2 rounded-lg hover:shadow-lg transition-all duration-300 text-sm font-medium">
-                Live Demo
-              </a>
-              <a href="https://github.com/sangam-verma9/sangam-next-portfolio"
-                class="flex-1 border border-gray-300 text-gray-700 text-center py-2 rounded-lg hover:bg-gray-50 transition-all duration-300 text-sm font-medium">
-                GitHub
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 4: Blog Platform -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover hover-lift">
-          <div class="h-48 bg-gradient-to-br from-orange-100 to-red-200 flex items-center justify-center">
-            <span class="text-6xl">✍️</span>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Blog Platform</h3>
-            <p class="text-gray-600 mb-4 text-sm">A full-featured blogging platform with user authentication, rich text
-              editor, and comment system.</p>
-
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">Next.js</span>
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">MongoDB</span>
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">NextAuth</span>
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">TailwindCSS</span>
-            </div>
-
-            <div class="flex space-x-3">
-              <a href="https://sangam-verma9.github.io/advertismentapp/"
-                class="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center py-2 rounded-lg hover:shadow-lg transition-all duration-300 text-sm font-medium">
-                Live Demo
-              </a>
-              <a href="https://github.com/sangam-verma9/advertismentapp"
-                class="flex-1 border border-gray-300 text-gray-700 text-center py-2 rounded-lg hover:bg-gray-50 transition-all duration-300 text-sm font-medium">
-                GitHub
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 5: Weather Dashboard -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover hover-lift">
-          <div class="h-48 bg-gradient-to-br from-cyan-100 to-blue-200 flex items-center justify-center">
-            <span class="text-6xl">🌤️</span>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Weather Dashboard</h3>
-            <p class="text-gray-600 mb-4 text-sm">A weather dashboard application displaying current weather and
-              forecasts with location-based services.</p>
-
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">React</span>
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">JavaScript</span>
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">Weather API</span>
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">CSS3</span>
-            </div>
-
-            <div class="flex space-x-3">
-              <a href="https://weather-app-2zgm.onrender.com/"
-                class="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center py-2 rounded-lg hover:shadow-lg transition-all duration-300 text-sm font-medium">
-                Live Demo
-              </a>
-              <a href="https://github.com/sangam-verma9/weather-app/"
-                class="flex-1 border border-gray-300 text-gray-700 text-center py-2 rounded-lg hover:bg-gray-50 transition-all duration-300 text-sm font-medium">
-                GitHub
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 6: Social Media App -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover hover-lift">
-          <div class="h-48 bg-gradient-to-br from-pink-100 to-rose-200 flex items-center justify-center">
-            <span class="text-6xl">💬</span>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Social Media App</h3>
-            <p class="text-gray-600 mb-4 text-sm">A social media application with user profiles, posts, likes, comments,
-              and real-time notifications.</p>
-
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">React</span>
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">Node.js</span>
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">MongoDB</span>
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">Socket.io</span>
-              <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">Cloudinary</span>
-            </div>
-
-            <div class="flex space-x-3">
-              <a href="https://instagram-lake-xi.vercel.app/"
-                class="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center py-2 rounded-lg hover:shadow-lg transition-all duration-300 text-sm font-medium">
-                Live Demo
-              </a>
-              <a href="https://github.com/sangam-verma9/instagram"
-                class="flex-1 border border-gray-300 text-gray-700 text-center py-2 rounded-lg hover:bg-gray-50 transition-all duration-300 text-sm font-medium">
-                GitHub
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+  </div>
+</section>
+<footer class="bg-gradient-to-b from-white to-sky-200 text-white py-12">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <div class="flex justify-center space-x-6 mb-5">
+      <a
+        href="https://www.linkedin.com/in/sangamverma"
+        class="text-gray-400 hover:text-white transition-colors duration-300"
+      >
+        <img src="/linkedin.png" alt="linkedin" class="w-10 h-10 hover:invert" />
+      </a>
+      <a
+        href="https://github.com/sangam-verma9"
+        class="text-gray-400 hover:text-white transition-colors duration-300"
+      >
+        <img src="/github.png" alt="github" class="w-10 h-10 scale-150 hover:invert" />
+      </a>
+      <a
+        href="mailto:sangamverma955911@gmail.com"
+        class="text-gray-400 hover:text-white transition-colors duration-300"
+      >
+        <img src="/email.png" alt="email" class="w-10 h-10 hover:invert" />
+      </a>
     </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience" class="py-20 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-gray-800 mb-4">Experience</h2>
-        <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto"></div>
-      </div>
-
-      <div class="max-w-3xl mx-auto">
-        <div class="relative">
-          <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-600 to-indigo-600"></div>
-
-          <div class="relative pl-20 pb-12">
-            <div class="absolute left-6 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg pulse-slow">
-            </div>
-            <div class="bg-white rounded-xl p-6 shadow-lg card-hover">
-              <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
-                <h3 class="text-xl font-semibold text-gray-800">Web Developer Intern</h3>
-                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Sep 2023 - Oct
-                  2023</span>
-              </div>
-              <p class="text-gray-600 mb-3">
-                Worked on full-stack web development projects using React.js, JavaScript, Bootstrap, HTML, CSS, and
-                React-icons.
-                Focused on UI implementation and GitHub collaboration.
-              </p>
-              <div class="flex flex-wrap gap-2">
-                <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">React.js</span>
-                <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">JavaScript</span>
-                <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Bootstrap</span>
-                <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">UI Implementation</span>
-                <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">GitHub</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="border-t border-gray-800 pt-5">
+      <p class="text-black">&copy; 2025 Sangam Verma. All rights reserved.</p>
     </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-gray-800 mb-4">Let's Work Together</h2>
-        <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto mb-6"></div>
-        <p class="text-gray-600 text-lg">My inbox is always open. Whether you have a question or just want to say hello!
-        </p>
-      </div>
-
-      <div class="max-w-4xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-12">
-          <div class="space-y-8">
-            <div class="flex items-start space-x-4">
-              <div
-                class="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
-                <span class="text-white text-xl">📧</span>
-              </div>
-              <div>
-                <h3 class="font-semibold text-gray-800 mb-2">Email</h3>
-                <p class="text-gray-600">sangamverma955911@gmail.com</p>
-              </div>
-            </div>
-
-            <div class="flex items-start space-x-4">
-              <div
-                class="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
-                <span class="text-white text-xl">💼</span>
-              </div>
-              <div>
-                <h3 class="font-semibold text-gray-800 mb-2">LinkedIn</h3>
-                <p class="text-gray-600">linkedin.com/in/sangamverma</p>
-              </div>
-            </div>
-
-            <div class="flex items-start space-x-4">
-              <div
-                class="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
-                <span class="text-white text-xl">💻</span>
-              </div>
-              <div>
-                <h3 class="font-semibold text-gray-800 mb-2">GitHub</h3>
-                <p class="text-gray-600">github.com/sangam-verma9</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8">
-            <form class="space-y-6" id="contact-form">
-              <div>
-                <input type="text" id="name" name="name" placeholder="Your Name" required
-                  class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all">
-              </div>
-              <div>
-                <input type="email" id="email" name="email" placeholder="Your Email" required
-                  class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all">
-              </div>
-              <div>
-                <textarea id="message" name="message" placeholder="Your Message" rows="4" required
-                  class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all resize-none"></textarea>
-              </div>
-              <button type="submit" id="submit-btn"
-                class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-3 rounded-lg hover:shadow-lg transition-all duration-300 font-semibold">
-                Send Message
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-12">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <div class="flex justify-center space-x-6 mb-8">
-        <a href="https://www.linkedin.com/in/sangamverma"
-          class="text-gray-400 hover:text-white transition-colors duration-300">LinkedIn</a>
-        <a href="https://github.com/sangam-verma9"
-          class="text-gray-400 hover:text-white transition-colors duration-300">GitHub</a>
-        <a href="mailto:sangamverma955911@gmail.com"
-          class="text-gray-400 hover:text-white transition-colors duration-300">Email</a>
-      </div>
-      <div class="border-t border-gray-800 pt-8">
-        <p class="text-gray-400">&copy; 2025 Sangam Verma. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-</body>
+  </div>
+</footer>
