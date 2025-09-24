@@ -23,7 +23,7 @@
           >Contact</a
         >
       </div>
-      <button id="mobile-menu-toggle" class="md:hidden text-gray-700">
+      <button id="mobile-menu-toggle" *ngIf="!mobileMenuOpen" class="md:hidden text-gray-700" (click)="toggleMobileMenu()">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
             stroke-linecap="round"
@@ -37,12 +37,12 @@
   </div>
 
   <div
-    id="mobile-menu"
-    class="mobile-menu fixed top-0 left-0 w-full h-screen bg-white z-40 md:hidden"
+  *ngIf="mobileMenuOpen"
+    class="fixed top-0 left-0 w-full h-screen bg-white z-40 md:hidden"
   >
     <div class="flex justify-between items-center px-6 py-4 border-b">
-      <div class="text-xl font-bold text-gray-800">Menu</div>
-      <button id="mobile-menu-close" class="text-gray-700">
+      <div class="text-xl font-bold text-gray-800 name-heading" >Sangam Verma</div>
+      <button id="mobile-menu-close" class="text-gray-700" (click)="closeMobileMenu()" *ngIf="mobileMenuOpen">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
             stroke-linecap="round"
@@ -54,11 +54,11 @@
       </button>
     </div>
     <div class="flex flex-col space-y-6 px-6 py-8">
-      <a href="#about" class="text-xl text-gray-700 hover:text-blue-600">About</a>
-      <a href="#skills" class="text-xl text-gray-700 hover:text-blue-600">Skills</a>
-      <a href="#projects" class="text-xl text-gray-700 hover:text-blue-600">Projects</a>
-      <a href="#experience" class="text-xl text-gray-700 hover:text-blue-600">Experience</a>
-      <a href="#contact" class="text-xl text-gray-700 hover:text-blue-600">Contact</a>
+      <a href="#about" class="text-xl text-gray-700 hover:text-blue-600" (click)="closeMobileMenu()">About</a>
+      <a href="#skills" class="text-xl text-gray-700 hover:text-blue-600" (click)="closeMobileMenu()">Skills</a>
+      <a href="#projects" class="text-xl text-gray-700 hover:text-blue-600" (click)="closeMobileMenu()">Projects</a>
+      <a href="#experience" class="text-xl text-gray-700 hover:text-blue-600" (click)="closeMobileMenu()">Experience</a>
+      <a href="#contact" class="text-xl text-gray-700 hover:text-blue-600" (click)="closeMobileMenu()">Contact</a>
     </div>
   </div>
 </nav>
@@ -154,7 +154,7 @@
       <div class="bg-white rounded-xl p-6 shadow-lg card-hover hover-lift border-2 border-blue-300">
         <div class="text-center mb-6">
           <div
-            class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sky-300 to-sky-500 rounded-full flex items-center justify-center pulse-slow"
+            class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center pulse-slow"
           >
             <span class="text-white text-2xl">🎨</span>
           </div>
@@ -181,7 +181,7 @@
       <div class="bg-white rounded-xl p-6 shadow-lg card-hover hover-lift border-2 border-blue-300">
         <div class="text-center mb-6">
           <div
-            class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sky-300 to-sky-500 rounded-full flex items-center justify-center pulse-slow"
+            class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center pulse-slow"
           >
             <span class="text-white text-2xl">⚙️</span>
           </div>
@@ -205,7 +205,7 @@
       <div class="bg-white rounded-xl p-6 shadow-lg card-hover hover-lift border-2 border-blue-300">
         <div class="text-center mb-6">
           <div
-            class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sky-300 to-sky-500 rounded-full flex items-center justify-center pulse-slow"
+            class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center pulse-slow"
           >
             <span class="text-white text-2xl">🛠️</span>
           </div>
@@ -229,7 +229,7 @@
       <div class="bg-white rounded-xl p-6 shadow-lg card-hover hover-lift border-2 border-blue-300">
         <div class="text-center mb-6">
           <div
-            class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sky-300 to-sky-500 rounded-full flex items-center justify-center pulse-slow"
+            class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center pulse-slow"
           >
             <span class="text-white text-2xl">📚</span>
           </div>
@@ -744,7 +744,7 @@
 
           <div class="flex items-start space-x-4">
             <div
-              class="w-12 h-12 bg-gradient-to-br from-sky-300 to-sky-500 rounded-lg flex items-center justify-center"
+              class="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center"
             >
               <span class="text-white text-xl">💼</span>
             </div>
@@ -756,7 +756,7 @@
 
           <div class="flex items-start space-x-4">
             <div
-              class="w-12 h-12 bg-gradient-to-br from-sky-300 to-sky-500 rounded-lg flex items-center justify-center"
+              class="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center"
             >
               <span class="text-white text-xl">💻</span>
             </div>
